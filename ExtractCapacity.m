@@ -15,6 +15,7 @@ DischargingCapacityCycle = zeros(1,length(DischargingCapacityIndex));
 for i = 1:length(ChargingCapacityIndex)
     ChargingCapacityCycle(i) = str2num(FullBatteryRead{ChargingCapacityIndex(i)})/1000;
 end
+% dummy change. Discard me
 for i = 1:length(DischargingCapacityIndex)
     DischargingCapacityCycle(i) = str2num(FullBatteryRead{DischargingCapacityIndex(i)})/1000;
 end
